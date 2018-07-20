@@ -1,0 +1,100 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name="description" content="mail pattern by john" />
+    <style>
+		.myTab{
+			width:900px
+		}
+        .txtTitle {
+            font-weight: bold;
+            font-size: 14.0pt;
+            line-height: 150%;
+            font-family: "微软雅黑",sans-serif;
+            color: #002060;
+            text-align: center;
+        }
+
+        .txtLeft {
+            text-align: left;
+            page: contText;
+            font-size: 11.0pt;
+            line-height: 150%;
+            font-family: "Arial",sans-serif;
+            color: windowtext;
+        }
+
+        thead th {
+            border-top: solid #5B9BD5 1.0pt;
+            border-left: none;
+            border-bottom: solid #7BA0CD 1.0pt;
+            border-right: solid #5B9BD5 1.0pt;
+            background: #244062;
+            padding: 0in 5.4pt 0in 5.4pt;
+            height: 4px;
+            line-height: 4px;
+        }
+
+        th > p {
+            font-family: "Arial",sans-serif;
+            color: white;
+        }
+
+        tr td {
+            border-top: none;
+            border-left: none;
+            border-bottom: solid #7BA0CD 1.0pt;
+            border-right: none;
+            background: white;
+            padding: 0in 5.4pt 0in 5.4pt;
+            height: 20.05pt;
+        }
+
+            tr td:first-child {
+                border-top: none;
+                border-left: solid #5B9BD5 1.0pt;
+                border-bottom: solid #7BA0CD 1.0pt;
+                border-right: none;
+            }
+
+            tr td:last-child {
+                border-top: none;
+                border-left: none;
+                border-bottom: solid #7BA0CD 1.0pt;
+                border-right: solid #5B9BD5 1.0pt;
+            }
+
+        @page WordSection1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in 1.25in 1.0in 1.25in;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        body {
+            background-color: #F2F2F2;
+        }
+    </style>
+</head>
+<body>
+    <div class="WordSection1">
+        <div align="center">
+            <p class="txtTitle">{title}</p>
+            <p class="txtLeft">Dear all,</p>
+            <p class="txtLeft">{content}</p>
+            <div align="center">
+                {tabContent}
+            </div>
+        </div>
+    </div>
+	<p class="txtLeft">Best Regards!</p>
+	<p class="txtLeft">
+	<i>Please do not reply to this email as it was sent from an unattended mailbox. </i>
+	</p>
+</body>
+</html>
